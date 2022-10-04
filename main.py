@@ -1,10 +1,10 @@
 import psycopg2
 
 # Setting up the bloctrox database.
-conn = psycopg2.connect(database="bloctrox",
+conn = psycopg2.connect(database="bloctrox", # the database in which I created in psql
                         host="localhost",
                         user="postgres",
-                        password="dataisnow21",
+                        password="password of the datbase",
                         port="5432")
 # created a cursor
 cursor = conn.cursor()
