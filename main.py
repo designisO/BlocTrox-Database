@@ -27,7 +27,7 @@ update_query = """Update bloctrox set user_name = '3000Orion' where id = 90"""
 cursor.execute(update_query)
 conn.commit()
 count = cursor.rowcount
-print(count, "Record updated successfully ")
+print(count, "Record updated on BlocTrox Database successfully ")
 
 # Fetch result
 cursor.execute("SELECT * FROM bloctrox")
@@ -38,10 +38,10 @@ delete_query = """Delete FROM bloctrox where id = 90"""
 cursor.execute(delete_query)
 conn.commit()
 count = cursor.rowcount
-print(count, "Record deleted successfully ")
+print(count, "Record deleted from BlocTrox Database successfully ")
 
 # Fetch result
-cursor.execute("SELECT * from bloctrox")
+cursor.execute("SELECT * FROM bloctrox")
 print("Result ", cursor.fetchall())
 
 
